@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AddActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/textView12"
+                android:textSize="30sp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thêm Mới Sinh Viên"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+                <ImageView
+                    android:id="@+id/imgUpdate"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="2"/>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2">
+                    <Button
+                        android:id="@+id/btChupHinh"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Chụp hình"
+                        android:textSize="17sp"
+                        android:background="@color/teal_200"
+                        android:textColor="#fff"
+                        android:textAllCaps="false"/>
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/btChonHinh"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Chọn hình"
+                        android:background="#6e578f"
+                        android:textColor="#fff"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Nhập tên"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/edtLop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:background="@drawable/input"
+                android:layout_marginBottom="10dp"
+                android:hint="Nhập lớp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/edtNgaySinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:background="@drawable/input"
+                android:layout_marginTop="20dp"
+                android:hint="Nhập ngày sinh (dd/mm/yyyy)"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:background="@drawable/button"
+                    android:id="@+id/btLuu"
+                    android:layout_marginRight="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"
+                    android:text="Thêm"/>
+                <Button
+                    android:background="@drawable/button"
+
+                    android:id="@+id/btHuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hủy"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
