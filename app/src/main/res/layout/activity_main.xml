@@ -18,7 +18,7 @@
         android:background="@color/teal_700"
         android:textColor="#fff"
         android:textAllCaps="false"
-        android:drawableStart="@drawable/ic_add"
+        android:drawableStart="@drawable/add"
         android:textSize="18dp"/>
     <ListView
         android:id="@+id/lvSinhVien"

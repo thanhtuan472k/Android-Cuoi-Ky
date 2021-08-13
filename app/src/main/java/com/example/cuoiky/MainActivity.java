@@ -18,7 +18,7 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
     final String DATABASE_NAME = "quanlisinhviennew.db";
-    SQLiteDatabase sqLiteDatabase;
+    public static SQLiteDatabase sqLiteDatabase;
 
     Button btThem;
     ListView lvSinhVien;
